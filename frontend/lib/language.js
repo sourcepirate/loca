@@ -59,7 +59,7 @@ export default () => {
                 //     expirationTime: 7 * 24 * 60 * 60 * 1000
                 // },
                 backend: {
-                    loadPath: '/public/locales/{{lng}}.json',
+                    loadPath: '/public/locales/en.json',
                     allowMultiLoading: false
                 }
             });

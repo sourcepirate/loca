@@ -5,14 +5,14 @@
             "website": ""
         },
         "product": {
-            "name": "Loca",
+            "name": "One click",
             "slogan": "Real estate management",
-            "website": "https://demo.nuageprive.fr/",
-            "imageUrl": "http://demo.nuageprive.fr/public/images/1.jpg"
+            "website": "",
+            "imageUrl": ""
         },
         "contact": {
-            "phone": "01.99.99.99.99",
-            "email": "camel.aissani@nuageprive.fr",
+            "phone": "9787877787",
+            "email": "praveenkumarpit@gmail.com",
             "address": {
                 "street1": "",
                 "street2": "",
@@ -25,23 +25,23 @@
             "title": "Open source real estate management",
             "description": "",
             "keywords": "open source software, free software, real estate management, online management, rent management, invoices, rent notices",
-            "location": "Paris, France",
+            "location": "India",
             "rating": "General",
             "author": {
-                "name": "Camel Aissani",
-                "twitter": "@camelaissani"
+                "name": "Praveen",
+                "twitter": ""
             }
         },
         "author": {
-            "name": "Camel Aissani",
-            "website": "http://www.nuageprive.fr",
+            "name": "Praveen",
+            "website": "http://www.peerworld.in",
             "twitter": {
-                "url": "https://twitter.com/camelaissani",
-                "id": "@camelaissani"
+                "url": "https://twitter.com/",
+                "id": "@nothing"
             },
             "github": {
-                "url": "https://github.com/camelaissani",
-                "id": "camelaissani"
+                "url": "https://github.com/",
+                "id": "nothing"
             }
         }
     }

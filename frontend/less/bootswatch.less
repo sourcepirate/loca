@@ -1,51 +1,29 @@
-// Cerulean 3.3.2
+// Simplex 3.3.7
 // Bootswatch
 // -----------------------------------------------------
 
+@web-font-path: "https://fonts.googleapis.com/css?family=Open+Sans:400,700";
+
+.web-font(@path) {
+  @import url("@{path}");
+}
+.web-font(@web-font-path);
+
 .btn-shadow(@color) {
-  #gradient > .vertical-three-colors(lighten(@color, 8%), @color, 60%, darken(@color, 4%));
+  #gradient > .vertical-three-colors(lighten(@color, 3%), @color, 6%, darken(@color, 3%));
   filter: none;
-  border-bottom: 1px solid darken(@color, 10%);
+  border: 1px solid darken(@color, 10%);
 }
 
 // Navbar =====================================================================
 
 .navbar {
-  .btn-shadow(@navbar-default-bg);
-  filter: none;
-  .box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
-
-  &-default {
-
-    .badge {
-      background-color: #fff;
-      color: @navbar-default-bg;
-    }
-  }
 
   &-inverse {
-    #gradient > .vertical-three-colors(lighten(@navbar-inverse-bg, 8%), lighten(@navbar-inverse-bg, 4%), 60%, darken(@navbar-inverse-bg, 2%));
-    filter: none;
-    border-bottom: 1px solid darken(@navbar-inverse-bg, 10%);
 
     .badge {
       background-color: #fff;
-      color: @navbar-inverse-bg;
-    }
-  }
-
-  .navbar-nav > li > a,
-  &-brand {
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  }
-}
-
-@media (max-width: @grid-float-breakpoint-max) {
-
-  .navbar {
-
-    .dropdown-header {
-      color: #fff;
+      color: @brand-primary;
     }
   }
 }
@@ -53,73 +31,144 @@
 // Buttons ====================================================================
 
 .btn {
-
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-
-  .caret {
-    border-top-color: #fff;
-  }
+  font-family: @headings-font-family;
 }
 
-.btn-default {
-
-  .btn-shadow(@btn-default-bg);
-
-  &:hover {
-    color: @btn-default-color;
-  }
-
-  .caret {
-    border-top-color: @text-color;
-  }
-}
-
-.btn-default {
+.btn-default,
+.btn-default:hover {
   .btn-shadow(@btn-default-bg);
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary:hover {
   .btn-shadow(@btn-primary-bg);
 }
 
-.btn-success {
+.btn-success,
+.btn-success:hover {
   .btn-shadow(@btn-success-bg);
 }
 
-.btn-info {
+.btn-info,
+.btn-info:hover {
   .btn-shadow(@btn-info-bg);
 }
 
-.btn-warning {
+.btn-warning,
+.btn-warning:hover {
   .btn-shadow(@btn-warning-bg);
 }
 
-.btn-danger {
+.btn-danger,
+.btn-danger:hover {
   .btn-shadow(@btn-danger-bg);
 }
 
 // Typography =================================================================
 
+body {
+  font-weight: 200;
+}
+
 // Tables =====================================================================
+
+th {
+  color: @headings-color;
+}
 
 // Forms ======================================================================
 
+legend {
+  color: @headings-color;
+}
+
+label {
+  font-weight: normal;
+}
+
+.has-warning {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline,
+  &.radio label,
+  &.checkbox label,
+  &.radio-inline label,
+  &.checkbox-inline label,
+  .form-control-feedback {
+    color: @brand-danger;
+  }
+
+  .form-control,
+  .form-control:focus {
+    border-color: @brand-danger;
+  }
+}
+
+.has-error {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline,
+  &.radio label,
+  &.checkbox label,
+  &.radio-inline label,
+  &.checkbox-inline label,
+  .form-control-feedback {
+    color: @brand-primary;
+  }
+
+  .form-control,
+  .form-control:focus {
+    border-color: @brand-primary;
+  }
+}
+
+.has-success {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline,
+  &.radio label,
+  &.checkbox label,
+  &.radio-inline label,
+  &.checkbox-inline label,
+  .form-control-feedback {
+    color: @brand-success;
+  }
+
+  .form-control,
+  .form-control:focus {
+    border-color: @brand-success;
+  }
+}
+
 // Navs =======================================================================
+
+.pager {
+  a {
+    color: @headings-color;
+  }
+
+  a:hover,
+  .active > a, {
+    border-color: @brand-primary;
+    color: #fff;
+  }
+
+  .disabled > a {
+    border-color: @pager-border;
+  }
+}
 
 // Indicators =================================================================
 
 // Progress bars ==============================================================
 
 // Containers =================================================================
-
-.panel-primary,
-.panel-success,
-.panel-warning,
-.panel-danger,
-.panel-info {
-
-  .panel-heading,
-  .panel-title {
-    color: #fff;
-  }
-}
